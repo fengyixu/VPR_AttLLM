@@ -97,7 +97,7 @@ pip install -r requirements.txt
 
 The paper experiments use the **SF-XL** dataset.
 
-- **GitHub / paper:** [gmberton/sf_xl](https://github.com/gmberton/sf_xl)  
+- **GitHub / paper:** [gmberton/CosPlace](https://github.com/gmberton/CosPlace)  
 - **Direct download (processed splits):** follow the instructions in the SF-XL repo.
 
 Expected folder layout after download:
@@ -246,7 +246,7 @@ result/
 
 *Fill in with your results.*
 
----
+<!-- ---
 
 ## Citation
 
@@ -259,7 +259,7 @@ If you use this code, please cite:
   journal = {arXiv},
   year    = {2025}
 }
-```
+``` -->
 
 ---
 
