@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs & checkpoints
+log/
+*.log
+batch_checkpoint.pkl
+batch_progress.json
+
+# Feature databases (large, regenerated automatically)
+*_db/
+distributed_features/
+ref_shards/
+reference_features.pkl
+
+# Result files
+result/
+
+# API keys & secrets  ← NEVER commit these
+API_key.txt
+*.env
+.env
+secrets.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

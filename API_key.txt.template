@@ -1,0 +1,17 @@
+# API Key Template
+# ----------------
+# Do NOT commit actual keys to version control.
+# Copy this file to API_key.txt (which is git-ignored) and fill in your values,
+# OR set the environment variables directly in your shell.
+
+# Google Gemini API key (required for Pipeline A & B with GeminiAgent)
+# Get yours at https://aistudio.google.com/app/apikey
+# Windows PowerShell:  $env:GEMINI_API_KEY = "your-key-here"
+# Linux / macOS:       export GEMINI_API_KEY="your-key-here"
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+
+# Alibaba DashScope API key (required only if using QwenAgent)
+# Get yours at https://dashscope.console.aliyun.com/
+# Windows PowerShell:  $env:DASHSCOPE_API_KEY = "your-key-here"
+# Linux / macOS:       export DASHSCOPE_API_KEY="your-key-here"
+DASHSCOPE_API_KEY=YOUR_DASHSCOPE_API_KEY_HERE
