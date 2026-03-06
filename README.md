@@ -234,18 +234,6 @@ result/
             └── aggregated_results.csv   ← Recall@1/5/10
 ```
 
----
-
-## Expected Results (SF-XL Flood, 100 m threshold)
-
-| Model | att_ratio | Recall@1 | Recall@5 | Recall@10 |
-|-------|-----------|----------|----------|-----------|
-| CosPlace (baseline) | 0.0 | — | — | — |
-| AttentionCosPlace (Gemini) | 0.5 | — | — | — |
-| AttentionCosPlace (Gemini) | 1.0 | — | — | — |
-
-*Fill in with your results.*
-
 <!-- ---
 
 ## Citation
@@ -253,7 +241,7 @@ result/
 If you use this code, please cite:
 
 ```bibtex
-@article{yourpaper2025,
+@article{paper2026,
   title   = {LLM-Guided Attention for Visual Place Recognition},
   author  = {Your Name et al.},
   journal = {arXiv},
