@@ -61,7 +61,9 @@ VPR_AttLLM/
 ├── prompts.py               # PromptManager for VLM prompts
 ├── svi_agent_main.py        # SviAgent — batch SVI generation & annotation
 ├── svi_json_clean.py        # JSON cleaning / repair utilities
-├── svi_preprocess.py        # Image preprocessing helpers (grid overlay, axis labels)
+├── svi_preprocess.py        # Image preprocessing helpers (resize utilities)
+│
+├── svi_agent_Qwen3_VL_8B_Instruct.ipynb  # Colab notebook: Pipeline B with local Qwen3-VL-8B
 │
 ├── requirements.txt
 ├── .gitignore
@@ -198,6 +200,23 @@ Output JSON format (one file per image):
 ```
 
 Requires `GEMINI_API_KEY` (or `DASHSCOPE_API_KEY` for Qwen).
+
+#### Pipeline B (open-source) — Local Qwen3-VL-8B on GPU
+
+For a fully API-free alternative, use the provided Colab notebook:
+
+**[`svi_agent_Qwen3_VL_8B_Instruct.ipynb`](svi_agent_Qwen3_VL_8B_Instruct.ipynb)**
+
+This notebook runs the same Pipeline B attention annotation using the open-source **[Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)** model locally on a GPU (tested on Google Colab with an A100).  Key features:
+
+| Feature | Detail |
+|---------|--------|
+| Model | `Qwen/Qwen3-VL-8B-Instruct` (8B vision-language model) |
+| Quantisation | 4-bit (BitsAndBytes) — fits in ~10 GB VRAM |
+| No API key needed | Model weights loaded from Hugging Face Hub |
+| Output format | Same per-image attention JSON as the cloud pipelines |
+
+Run the notebook top-to-bottom; it installs its own dependencies and walks through model loading, single-image inference, and batch processing.
 
 ---
 
